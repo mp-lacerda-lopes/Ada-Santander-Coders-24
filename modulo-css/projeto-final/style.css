@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-areas: 
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ."
+        ;
+        gap: 8.5rem;
+    
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        display: grid;
+        grid-template-areas: 
+        ". . . . ."
+        ". hero hero hero ."
+        ". form form form ."
+        ". form form form ."
+        ". . . . ."
+        ;
+        gap: 8.5rem;
+    } 
+    aside{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    aside img{
+        height: 200px;
+        width: 250px;
+
+    }
+}
+
+main{
+    grid-area: form;
+}
+
+aside{
+    grid-area: hero;
+}
+
+aside h1{
+    font-size: 64px;
+    font-weight: 500px;
+    line-height: 75px;
+    }
+
+h1 span, h2 span{
+    color: rgb(235, 105, 126);
+}
+
+main{
+    width: 60rem;
+    height: 52rem;
+    height: 94vh;
+    padding: 4.5rem 5.7rem;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+
+}
+
+
+main h2{
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+
+}
+
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a{
+    background-color: #35e6e9;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+    height: 5.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+
+main .actions a:hover{
+    background-color:#23c3c6;
+}
+
+
+main .actions a + a{
+    background-color: rgb(235, 105, 126);
+    margin-top: 4.8rem;
+}
+
+main .actions a + a:hover{
+    background-color: rgb(215, 87, 109);
+}
+
+main header {
+    display: flex;
+    gap: 0 1.8rem;
+    align-items: center;
+}
+
+main header i {
+    font-size: 2.4rem;
+    color: rgb(215, 87, 109);
+}
+
+main footer p{
+    font-size: 1.6rem;
+    margin-top: 8rem;
+
+
+}
+
+main footer a {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+    color: #000;
+}
+main form{
+    margin-top: 1.6rem;
+}
+
+main form label{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: .3rem;
+    margin-top: 0.8rem;
+    display: block;
+}
+
+
+main form :is(input, select) {
+    width: 489px;
+    height: 5.5rem;
+    display: block;
+
+    background: #FFFFFF;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+}
+
+main form .points {
+    position: relative;
+}
+
+main form :is(input, select) + button {
+    position: absolute;
+    right: -3.8rem;
+    top: calc(2.7rem + 2.3rem);
+    background-color: transparent;
+    border: none;
+    color: #23c3c6;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+main form select{
+    appearance: none;
+}
+
+/*
+main form .select-div::after {
+    top: 1.7rem;
+    right: 1.7rem;
+    font-size: 2.2rem;
+    content: '\F229';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: #23c3c6;
+    
+} */
+
+main form :is(#input-field, #input-name, #points) {
+    color: #000000; /* Cor desejada para o texto de placeholder */
+    /* font-style: italic; Estilo de fonte (opcional) */
+    font-size: 1.6rem;
+    padding-left: 1.2rem;
+}
+
+
+main form select option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #646464;
+}
+
+
+main form button i:hover{
+    color:#146a6c;
+    
+}
+
+main i:hover{
+    color:rgb(184, 59, 80);
+    
+}
