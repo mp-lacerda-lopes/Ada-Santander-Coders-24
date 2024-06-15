@@ -1,0 +1,75 @@
+
+header img {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.451);
+}
+
+body {
+    background-color: #222;
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: #333;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.274);
+
+    position: fixed; /* Torna a navbar fixa no topo */
+    top: 0; /* Alinha a navbar ao topo da página */
+    width: 100%; /* Faz a navbar ocupar toda a largura da página */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+header nav#navbar{
+display: flex;
+align-items: center;
+justify-content: space-between ;
+
+max-width: 1040px;
+margin: 0 auto ;
+padding: 0 2rem;
+height: 9rem;
+}
+
+header nav#navbar .nav-brand{
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+header nav#navbar .nav-brand h1{
+    font-family: 'Grenze';
+    text-shadow: 0.3rem 0.3rem 0.4rem black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.2rem;
+}
+
+header nav#navbar .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    color: white;
+    list-style: none;
+}
+
+header nav#navbar .nav-list li a{
+    color: #868282;
+}
+
+header nav#navbar .nav-list li a:hover{
+    background-color: #222;
+    border-radius: 0.3rem;
+    border: 0.1rem;
+    border-color: #222;
+    box-shadow: 0.3rem 0.3rem 0.7rem rgb(0, 0, 0);
+
+    color: #fff;
+    transition: 0.3s;
+}
