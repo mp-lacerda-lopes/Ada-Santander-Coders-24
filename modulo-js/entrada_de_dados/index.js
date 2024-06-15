@@ -4,6 +4,10 @@
 // Importando a biblioteca readline-sync
 const readlineSync = require('readline-sync'); // require é reservada no JS para importação de bibliotecas
 
+/*const readlineSync = require('readline-sync');   forma mais antiga*/
+/*import readlileSync from 'readline-sync';   forma mais recente*/
+
+
 // Solicitando a idade do usuário
 const idade = readlineSync.question('Escreva a sua idade: '); 
 
