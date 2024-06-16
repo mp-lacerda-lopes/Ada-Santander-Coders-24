@@ -1,0 +1,30 @@
+div#contador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+
+div#button{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+button.count{
+    background-color: rgb(60, 29, 101);
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+h2.number {
+    margin-top: 5rem;
+}
+

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+section#articles {
+    margin-top: 6.4rem;
+    max-width: 102rem;
+    padding: 6rem 3rem;
+    margin: 6rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4.6rem;
+}
+
+section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    background: linear-gradient(to right, #642eb5, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    text-align: justify;
+}
